@@ -37,13 +37,6 @@ UPDATE produk
 SET harga = 100000
 WHERE produk.id = 4
 
-INSERT INTO produk(nama, harga, stok, kategori_id)
-VALUES
-('Boneka Elsa Frozen', 50000, 5, 4)
-
-DELETE FROM produk
-WHERE id = 6
-
 INSERT INTO kategori(nama_kategori)
 VALUES
 ('Mainan Laki-Laki')
@@ -58,6 +51,13 @@ WHERE kategori.id = 5;
 UPDATE kategori
 SET nama_kategori = 'Mainan Remaja'
 WHERE kategori.id = 4
+
+INSERT INTO produk(nama, harga, stok, kategori_id)
+VALUES
+('Boneka Elsa Frozen', 50000, 5, 4)
+
+DELETE FROM produk
+WHERE id = 6
 
 UPDATE produk
 SET kategori_id = 4
